@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\snakebody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\snakebody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\snakerect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\snakerect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\rain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\rain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\pixel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\colorsfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\colorsfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|d:\\work\\portfolio\\others\\aivdraw\\snake\\snake\\gfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\gfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\randomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\randomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\snake\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C2AC51-64DE-43DA-9395-6EF34A731D49}|Snake\\Snake.csproj|solutionrelative:snake\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rain.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Rain.cs",
+              "RelativeDocumentMoniker": "Snake\\Rain.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Rain.cs",
+              "RelativeToolTip": "Snake\\Rain.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:34:02.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Game.cs",
+              "RelativeDocumentMoniker": "Snake\\Game.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Game.cs",
+              "RelativeToolTip": "Snake\\Game.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:33:49.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Field.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Field.cs",
+              "RelativeDocumentMoniker": "Snake\\Field.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Field.cs",
+              "RelativeToolTip": "Snake\\Field.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:33:26.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColorsFactory.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\ColorsFactory.cs",
+              "RelativeDocumentMoniker": "Snake\\ColorsFactory.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\ColorsFactory.cs",
+              "RelativeToolTip": "Snake\\ColorsFactory.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:33:18.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Color.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Color.cs",
+              "RelativeDocumentMoniker": "Snake\\Color.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Color.cs",
+              "RelativeToolTip": "Snake\\Color.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:33:16.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Apple.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Apple.cs",
+              "RelativeDocumentMoniker": "Snake\\Apple.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Apple.cs",
+              "RelativeToolTip": "Snake\\Apple.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:33:04.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Gfx.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Gfx.cs",
+              "RelativeDocumentMoniker": "Snake\\Gfx.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Gfx.cs",
+              "RelativeToolTip": "Snake\\Gfx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pixel.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Pixel.cs",
+              "RelativeDocumentMoniker": "Snake\\Pixel.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Pixel.cs",
+              "RelativeToolTip": "Snake\\Pixel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA4wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RandomGenerator.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\RandomGenerator.cs",
+              "RelativeDocumentMoniker": "Snake\\RandomGenerator.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\RandomGenerator.cs",
+              "RelativeToolTip": "Snake\\RandomGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Score.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Score.cs",
+              "RelativeDocumentMoniker": "Snake\\Score.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Score.cs",
+              "RelativeToolTip": "Snake\\Score.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SnakeBody.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\SnakeBody.cs",
+              "RelativeDocumentMoniker": "Snake\\SnakeBody.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\SnakeBody.cs",
+              "RelativeToolTip": "Snake\\SnakeBody.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAywAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SnakeRect.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\SnakeRect.cs",
+              "RelativeDocumentMoniker": "Snake\\SnakeRect.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\SnakeRect.cs",
+              "RelativeToolTip": "Snake\\SnakeRect.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAuwCsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Timer.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Timer.cs",
+              "RelativeDocumentMoniker": "Snake\\Timer.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Timer.cs",
+              "RelativeToolTip": "Snake\\Timer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Vector2.cs",
+              "RelativeDocumentMoniker": "Snake\\Vector2.cs",
+              "ToolTip": "D:\\Work\\Portfolio\\Others\\AivDraw\\Snake\\Snake\\Vector2.cs",
+              "RelativeToolTip": "Snake\\Vector2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:32:43.583Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

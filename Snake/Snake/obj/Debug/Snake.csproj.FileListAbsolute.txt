@@ -1,0 +1,57 @@
+C:\Users\solan\Desktop\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Snake\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Snake\Snake\obj\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\obj\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\bin\Debug\AivDraw.dll
+C:\Users\solan\Desktop\Portfolio\Snake (C# - CLI)\Snake\obj\Debug\Snake.csproj.CopyComplete
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\bin\Debug\AivDraw.dll
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\obj\Debug\Snake.csproj.CopyComplete
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C#)\Snake\obj\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\bin\Debug\AivDraw.dll
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\obj\Debug\Snake.csproj.CopyComplete
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Snake (C#) - Da finire e aggiornare\Snake\obj\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\AivDraw.dll
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\obj\Debug\Snake.csproj.CopyComplete
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\obj\Debug\Snake.pdb
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\Assets\apple_1.png
+C:\Users\solan\Desktop\Portfolio\Primo Anno AIV\Snake (C# + Aiv.Draw) - Parte #2\Snake\bin\Debug\Assets\apple_2.png
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\Assets\apple_1.png
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\Assets\apple_2.png
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\bin\Debug\AivDraw.dll
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.csproj.SuggestedBindingRedirects.cache
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.csproj.CopyComplete
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\solan\Desktop\Game Development\Portfolio\Primo Anno AIV\Snake\Snake\obj\Debug\Snake.pdb
