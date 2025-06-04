@@ -13,25 +13,31 @@ namespace Snake
         private Color color;
         private int halfWidth;
         private int halfHeigth;
-        private float speed; //Velocità
-        private bool keyPressed; //Booleano per la pressione del tasto senza "tenere premuto"
-        private char charPressed; //Controlli sulla gestione dell'input (carattere premuto)
+        private float speed;
+        private bool keyPressed; // Boolean for pressing the key without “hold down”.
+        private char charPressed; // Controls on input handling (character pressed).
         private char prevCharPressed;
 
         public SnakeRect(char charPressed = ' ')
         {
-            X = (int)(Gfx.Window.Width * 0.5f) - 15; //Posizione iniziale
+            // Starting position.
+            X = (int)(Gfx.Window.Width * 0.5f) - 15; 
             Y = (int)(Gfx.Window.Height * 0.5f) - 15;
+            
             halfWidth = 15;
             halfHeigth = 15;
+            
             color = ColorsFactory.GetColor(Colors.Green);
-            speed = halfWidth * 2; //Velocità (si sposta di 30px, in modo da rimanere conforme alla griglia virtuale)
+            
+            // Speed: shifts by 30px, so as to remain compliant with the virtual grid.
+            speed = halfWidth * 2; 
+            
             keyPressed = false;
             this.charPressed = charPressed;
             prevCharPressed = ' ';
         }
 
-        //Properties per le coordinate ed il colore
+        // Properties for coordinates and color.
         public float X { get { return position.x; } set { position.x = value; } }
         public float Y { get { return position.y; } set { position.y = value; } }
         public Color Color { get { return color; } set { color = value; } }
@@ -40,7 +46,7 @@ namespace Snake
 
         public char CheckInput()
         {
-            //Se premo un tasto, non premendo gli altri, e non ho ancora premuto effettivamente su un tasto, ritorno quel tasto
+            // If i press one key, not pressing the others, and i haven't actually pressed on a key yet, i return that key.
             if (!keyPressed && Gfx.Window.GetKey(KeyCode.W) && !Gfx.Window.GetKey(KeyCode.A) && !Gfx.Window.GetKey(KeyCode.S) && !Gfx.Window.GetKey(KeyCode.D))
             {
                 charPressed = 'W';
@@ -57,12 +63,14 @@ namespace Snake
             {
                 charPressed = 'D';
             }
+            
             return charPressed;
         }
 
         public void DoMovement(ref char character)
         {
-            switch (character) //Sposto effettivamente il serpente
+            // I actually move the snake.
+            switch (character) 
             {
                 case 'W':
                     position.y -= speed;
@@ -81,16 +89,21 @@ namespace Snake
 
         public bool UpdateMovement(char oppositeChar)
         {
-            if (prevCharPressed != oppositeChar) //Se ho premuto il tasto di direzione opposta, continuo il movimento precedente
+            // If i pressed the opposite direction key, i continue the previous movement.
+            if (prevCharPressed != oppositeChar) 
             {
-                DoMovement(ref charPressed); //Altrimenti mi muovo in base al tasto premuto
-                keyPressed = false; //Setto a false perchè ho premuto il tasto
+                // Otherwise i move according to the key pressed.
+                DoMovement(ref charPressed); 
+                // Set to false because I pressed the key.
+                keyPressed = false;
+                
                 return true;
             }
             else
             {
                 DoMovement(ref prevCharPressed);
                 keyPressed = false;
+                
                 return false;
             }
         }
@@ -98,10 +111,13 @@ namespace Snake
         public void Movement()
         {
             bool temp = false;
-            switch (charPressed) //In base a che tasto ho premuto, mi sposto di conseguenza
+            
+            // Based on what key i pressed, i move accordingly.
+            switch (charPressed)
             {
+                // Return the method that applies the motion, passing the opposite direction key as a parameter.
                 case 'W':
-                    temp = UpdateMovement('S'); //Richiamo il metodo che applica il movimento, passando il tasto di direzione opposta come parametro
+                    temp = UpdateMovement('S'); 
                     break;
                 case 'A':
                     temp = UpdateMovement('D');
@@ -113,38 +129,45 @@ namespace Snake
                     temp = UpdateMovement('A');
                     break;
             }
-            if (temp) prevCharPressed = charPressed; //Se il movimento è avvenuto correttamente, salvo il tasto
-            //precedente in modo da creare il movimento continuo anche senza tenere premuto il tasto di direzione
+            
+            // If the movement was successful, save the previous so as to create the continuous movement
+            // even without holding down the direction key.
+            if (temp) prevCharPressed = charPressed; 
         }
 
         public bool CheckCollision(Apple apple)
         {
             if (apple != null)
             {
-                if (position.x == apple.X && position.y == apple.Y) //Collisione mela in base alla posizione precisa
+                // Collision apple based on precise position.
+                if (position.x == apple.X && position.y == apple.Y) 
                 {
                     apple.Update();
+                    
                     return true;
                 }
             }
+            
             return false;
         }
 
         public void Input()
         {
-            charPressed = CheckInput(); //Ottengo l'input di direzione
+            // Obtain direction input.
+            charPressed = CheckInput();
         }
 
         public void Update(ref int i)
         {
-            if (Timer.alarm) Movement(); //Se il timer ha suonato, mi muovo
+            // If the timer has sounded, the snake moves.
+            if (Timer.alarm) Movement(); 
         }
 
         public void Draw()
         {
-            //Come con la mela
             float positionCenterX = position.x - halfWidth;
             float positionCenterY = position.y - halfHeigth;
+            
             if (position.x < 0 || position.x > Gfx.Window.Width || position.y < 0 || position.y > Gfx.Window.Height) //Se snake esce dalla finestra...
             {
                 Game.GameOver();
@@ -153,9 +176,7 @@ namespace Snake
             {
                 Gfx.DrawRect((int)positionCenterX, (int)positionCenterY, halfWidth * 2, halfHeigth * 2, color);
             }
-
         }
     }
-
 }
 

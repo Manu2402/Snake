@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    static class Timer //Classe statica, timer condiviso con gli altri oggetti
+    // Static class, timer shared with other objects.
+    static class Timer
     {
-        public static float currentTime; //Tempo nell'istante x
-        public static float alarmTime; //Tempo nella quale il timer deve suonare
-        public static bool alarm; //Suono del timer
-        public static bool run; //Esecuzione del timer
+        public static float currentTime; //T ime at instant "x".
+        public static float alarmTime; // Time in which the timer is to sound.
+        public static bool alarm; // Timer sound.
+        public static bool run; // Timer execution.
 
         public static void RunTimer()
         {
-            if (run) //Parte il timer
+            if (run)
             {
-                currentTime += 20f * Gfx.Window.DeltaTime; //Aggiunge un valore frame independent
-                if (currentTime >= alarmTime) //Imposta l'allarme a true quando raggiunge il valore impostato
+                currentTime += 20f * Gfx.Window.DeltaTime;
+                
+                // Sets alarm to true when the value reaches the set value.
+                if (currentTime >= alarmTime)
                 {
                     alarm = true;
                 }
@@ -27,19 +30,19 @@ namespace Snake
 
         public static void SetTimer()
         {
-            run = true; //Fa partire il timer
-            alarmTime = 0.5f; //Imposta i valori
+            run = true;
+            alarmTime = 0.5f;
             currentTime = 0f;
         }
 
         public static void CheckTimer()
         {
-            if (alarm) //Se ha suonato...
+            // If it sounds, i stop the “ringer” and i reset it.
+            if (alarm)
             {
-                alarm = false; //Spengo la "suoneria" e lo resetto
+                alarm = false;  
                 currentTime = 0f;
             }
         }
-
     }
 }

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Rain //Pioggia che si attiva ogni 10 punti effettuati
+    //Rain that is activated every 10 points made
+    
+    class Rain 
     {
-        private Pixel[] sprites; //Pixel per creare la pioggia
+        private Pixel[] sprites;
         private int numPixels;
         private int pixelSize;
         private Vector2 position;
@@ -22,18 +24,21 @@ namespace Snake
             sprites = new Pixel[numPixels];
             pixelSize = 5;
             color = ColorsFactory.GetColor(Colors.LightBlue);
+            
             for (int i = 0; i < numPixels; i++)
             {
                 if (i % (numPixels * 0.5f) == 0)
                 {
                     position = positionStart;
                 }
+                
                 position.x += 10f;
                 sprites[i] = new Pixel(position, pixelSize, color);
             }
         }
 
-        public void SetRainTrue() //Li attivo quando escono dallo schermo
+        // Activate them when they leave the screen.
+        public void SetRainTrue()
         {
             for (int i = 0; i < numPixels; i++)
             {
@@ -45,7 +50,8 @@ namespace Snake
             }
         }
 
-        public void SetRainStartCollision() //Li riporto al posto di partenza quando stanno per uscire dallo schermo
+        // Take them back to the starting place when they are about to leave the screen.
+        public void SetRainStartCollision()
         {
             for (int i = 0; i < numPixels; i++)
             {
@@ -56,9 +62,11 @@ namespace Snake
             }
         }
 
-        public void Update() //Aggiorno con un numero randomico la velocità della caduta della pioggia
+        // Add with a random number the speed of the rain fall.
+        public void Update()
         {
             float velocity;
+            
             for (int i = 0; i < sprites.Length; i++)
             {
                 if (sprites[i].IsAlive)
@@ -79,6 +87,5 @@ namespace Snake
                 }
             }
         }
-
     }
 }

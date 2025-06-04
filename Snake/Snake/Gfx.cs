@@ -9,25 +9,26 @@ namespace Snake
 {
     static class Gfx
     {
-        public static Window Window; //Membro statico accedibile dall'esterno
-        public static int distFromBorder; //Distanza dal bordo (disegno completo sulla finestra)
+        public static Window Window;
+        public static int distFromBorder;
 
         static Gfx()
         {
-            Window = new Window(855, 855, "SnakeRect", PixelFormat.RGB); //Creo la window
+            Window = new Window(855, 855, "SnakeRect", PixelFormat.RGB);
             distFromBorder = 7;
         }
 
-        public static void PutPixel(int x, int y, Color color) //Manipolo il pixel di coordinate x,y
+        public static void PutPixel(int x, int y, Color color)
         {
             if (x < 0 || x > Gfx.Window.Width || y < 0 || y > Gfx.Window.Height) return;
+            
             int pixelIndex = (x + y * Gfx.Window.Width) * 3;
             Window.Bitmap[pixelIndex] = color.R;
             Window.Bitmap[pixelIndex + 1] = color.G;
             Window.Bitmap[pixelIndex + 2] = color.B;
         }
 
-        public static void ClearScreen() //Pulisco la schermata
+        public static void ClearScreen()
         {
             for (int i = 0; i < Window.Bitmap.Length; i++)
             {
@@ -35,7 +36,8 @@ namespace Snake
             }
         }
 
-        public static void DrawRect(int x, int y, int width, int height, Color color) //Disegno un rettangolo dato base e altezza (togliendo il pixel negli angoli)
+        // Draw a rectangle given base and height (removing the pixel in the corners).
+        public static void DrawRect(int x, int y, int width, int height, Color color) 
         {
             for (int i = 0; i < height; i++)
             {
@@ -49,7 +51,8 @@ namespace Snake
             }
         }
 
-        public static void DrawRectWithoutCorners(int x, int y, int width, int height, Color color) //Disegno un rettangolo dato base e altezza
+        // Draw a rectangle given base and height.
+        public static void DrawRectWithoutCorners(int x, int y, int width, int height, Color color)
         {
             for (int i = 0; i < height; i++)
             {
@@ -62,16 +65,19 @@ namespace Snake
 
         public static void DrawSprite(Sprite sprite, int spriteX, int spriteY)
         {
-            int x, y; //Coordinate window
-            for (int i = 0; i < sprite.Height; i++) //Scorro lo sprite
+            int x, y;
+            
+            // Scroll the sprite.
+            for (int i = 0; i < sprite.Height; i++) 
             {
                 for (int j = 0; j < sprite.Width; j++)
                 {
-                    x = spriteX + i; //[?]
+                    x = spriteX + i;
                     y = spriteY + j;
                     if (x < 0 || x >= Gfx.Window.Width || y < 0 || y >= Gfx.Window.Height) return;
-                    int canvasIndex = (x + y * Gfx.Window.Width) * 3; //R, G, B
-                    //Si prende un campione dei valori RGBA della window e della sprite
+                    
+                    int canvasIndex = (x + y * Gfx.Window.Width) * 3; // R, G, B
+                    // Takes a sample of the RGBA values of the window and sprite.
                     int spriteIndex = (i + j * sprite.Width) * 4; //R, G, B, [A] (alpha)
                     byte spriteR = sprite.Bitmap[spriteIndex];
                     byte spriteG = sprite.Bitmap[spriteIndex + 1];
@@ -80,18 +86,17 @@ namespace Snake
                     byte winR = Gfx.Window.Bitmap[canvasIndex];
                     byte winG = Gfx.Window.Bitmap[canvasIndex + 1];
                     byte winB = Gfx.Window.Bitmap[canvasIndex + 2];
-                    float alpha = spriteA / 255f; //[0...1] --> Trovo la % di trasparenza
-                    //Applico la % di trasparenza ai due oggetti (window e sprite)
+                    float alpha = spriteA / 255f; //[0...1] --> I find the % of transparency.
+                    // Apply % transparency to the two objects (window and sprite).
                     byte blendR = (byte)(spriteR * alpha + winR * (1 - alpha));
                     byte blendG = (byte)(spriteG * alpha + winG * (1 - alpha));
                     byte blendB = (byte)(spriteB * alpha + winB * (1 - alpha));
-                    //Modifico il vettore bitmap della window con i colori finali (blendati)
+                    // Modify the bitmap vector of the window with the final (blended) colors.
                     Window.Bitmap[canvasIndex] = blendR;
                     Window.Bitmap[canvasIndex + 1] = blendG;
                     Window.Bitmap[canvasIndex + 2] = blendB;
                 }
             }
         }
-
     }
 }

@@ -8,14 +8,15 @@ namespace Snake
 {
     enum Colors
     {
-        Green, DarkGreen, Black, LightBlue, LAST //Enum di colori, usati per scopo preciso
+        Green, DarkGreen, Black, LightBlue, LAST
     }
 
     static class ColorsFactory
     {
         public static Color color;
 
-        public static Color GetColor(Colors col) //Passo un colore come parametro e in base al suo valore RGB lo associo alla Enum e lo ritorno
+        // Factory pattern.
+        public static Color GetColor(Colors col) 
         {
             switch (col)
             {
@@ -44,7 +45,5 @@ namespace Snake
             }
             return color;
         }
-
-
     }
 }

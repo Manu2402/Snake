@@ -2,38 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Aiv.Draw;
 
 namespace Snake
 {
-
     class Apple
     {
-        private Vector2 position; //Coordinate
-        //private Color color; --> Colore
-        private int halfWidth; //Metà larghezza
-        private int halfHeight; //Metà altezza
+        private Vector2 position;
+        // private Color color;
+        private int halfWidth;
+        private int halfHeight;
 
-        private Sprite sprite; //Sprite della mela
-        private Animation animation; //Animazione
+        private Sprite sprite;
+        private Animation animation;
         private string[] fileNames;
         private float fps;
         
         public Apple() 
         { 
-            //color = ColorsFactory.GetColor(Colors.Red); --> Setto il colore della mela
+            // color = ColorsFactory.GetColor(Colors.Red);
 
-            fps = 8; //Dico quanti frame deve durare l'animazione
+            fps = 8; // Number of FPS.
             fileNames = new string[2];
-            for (int i = 0; i < fileNames.Length; i++) //Carico i path delle texture
+            for (int i = 0; i < fileNames.Length; i++) // Load textures path.
             {
                 fileNames[i] = $"Assets/apple_{i + 1}.png";
             }
-            animation = new Animation(fileNames, fps); //Creo l'animation (gestisce il flusso di frame MA NON LI APPLICA)
-            sprite = animation.CurrentSprite; //Applico il currentSprite
-            halfWidth = (int)(sprite.Width * 0.5f); //Nuove dimensioni
+            
+            animation = new Animation(fileNames, fps);
+            sprite = animation.CurrentSprite;
+            
+            halfWidth = (int)(sprite.Width * 0.5f);
             halfHeight = (int)(sprite.Height * 0.5f);
+            
             Update();
         }
         
@@ -42,12 +43,16 @@ namespace Snake
 
         public void Update()
         {
-            Random r = new Random(); //Random number per lo spawn/respawn
-            do //Ciclo che applica le coordinate di spawn, devono essere conformi al modello di rappresentazione (griglia di pixel grandi 30x30)
+            Random r = new Random();
+            
+            // Loop that applies spawn coordinates, must conform to the representation model:
+            // (grid of 30x30 "pixels").
+            do 
             {
                 position.x = r.Next(halfWidth + Gfx.distFromBorder, Gfx.Window.Width - halfWidth - Gfx.distFromBorder);
                 position.y = r.Next(halfHeight + Gfx.distFromBorder, Gfx.Window.Height - halfHeight - Gfx.distFromBorder);
             } while (position.x % 15 != 0 || position.x % 30 == 0 || position.y % 15 != 0 || position.y % 30 == 0);
+            
             position.x += Gfx.distFromBorder;
             position.y += Gfx.distFromBorder;
         }
@@ -60,14 +65,11 @@ namespace Snake
 
         public void Draw()
         {
-            float positionCenterX = position.x - halfWidth; //Imposto il pivot al centro della mela
+            // Sets the pivot to the center of the sprite.
+            float positionCenterX = position.x - halfWidth;
             float positionCenterY = position.y - halfHeight;
-
-            //Disegno
-            //Gfx.DrawRect((int)positionCenterX, (int)positionCenterY, halfWidth * 2, halfHeigth * 2, color);
+            
             Gfx.DrawSprite(sprite, (int)positionCenterX, (int)positionCenterY);
         }
-
     }
-
 }

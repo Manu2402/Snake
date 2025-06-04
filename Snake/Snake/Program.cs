@@ -13,8 +13,8 @@ namespace Snake
     {
         public static void Main(string[] args)
         {
-            Game.Init(); //Eseguito una volta ogni esecuzione
-            Game.Play(); //Eseguito una volta ogni frame
+            Game.Init(); // Executed once each execution.
+            Game.Play(); // Executed once each frame.
         }
 
     }

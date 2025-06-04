@@ -8,8 +8,9 @@ namespace Snake
 {
     class Field
     {
-        private Pixel[] sprite; //Pixel attivi per il disegno del background
-        private int pixelSize; //Dimensione del pixel
+        // Active pixels.
+        private Pixel[] sprite; 
+        private int pixelSize; 
         private Color colorBorder;
 
         public Field()
@@ -18,9 +19,12 @@ namespace Snake
             byte[] pixels = new byte[Gfx.Window.Width * Gfx.Window.Height];
             for (int i = 0; i < Gfx.Window.Height; i++) //Assegno 1 se il pixel va disegnato, 0 se non va disegnato
             {
+                // • 1: Pixel Draw
+                // • 0: Pixel Not Draw
+                
                 for (int j = 0; j < Gfx.Window.Width; j++)
                 {
-                    //Coloro il bordo spostandolo leggermente più al centro
+                    // Border. Did with magic numbers.
                     if (i == 4 && (j > 3 && j < Gfx.Window.Width - 4) || j == 4 && (i > 3 && i < Gfx.Window.Height - 4) || i == Gfx.Window.Height - 5 && (j > 3 && j < Gfx.Window.Width - 4) || j == Gfx.Window.Width - 5 && (i > 3 && i < Gfx.Window.Height - 4)) 
                     {
                         pixels[j + (i * Gfx.Window.Width)] = 1;
@@ -28,41 +32,52 @@ namespace Snake
                     else pixels[j + (i * Gfx.Window.Width)] = 0;
                 }
             }
-            int numPixels = 0; //Calcolo il numero di pixel attivi
+            
+            // Active pixels.
+            int numPixels = 0;
             for (int i = 0; i < pixels.Length; i++)
             {
                 if (pixels[i] == 1) numPixels++;
             }
-            sprite = new Pixel[numPixels]; //Alloco il numero di pixel attivi nel vettore "sprite"
-            int verticalPixels = (int)(Gfx.Window.Height); //Calcolo il numero di pixel per ogni dimensione (x, y)
-            int horizontalPixels = (int)(Gfx.Window.Width); //Un pixel avrà dimensione 1*1 px
-            pixelSize = Gfx.Window.Height / verticalPixels; //Dim: 2px * 2px
-            float startX = 0; //La posizione iniziale sarà a 0, 0
+            
+            sprite = new Pixel[numPixels]; // Memory allocation.
+            
+            // Calculate the number of pixels for each dimension (x, y).
+            int verticalPixels = (int)(Gfx.Window.Height); 
+            // A pixel will have size 1px * 1px.
+            int horizontalPixels = (int)(Gfx.Window.Width); 
+            
+            // Size: 2px * 2px
+            pixelSize = Gfx.Window.Height / verticalPixels;
+            
+            float startX = 0; 
             float startY = 0;
-            int index = 0; //Indice che indica l'n-esimo pixel
-            for (int i = 0; i < pixels.Length; i++) //Scorro il rettangolo di pixel
+            
+            int index = 0;
+            for (int i = 0; i < pixels.Length; i++)
             {
-                if (i % horizontalPixels == 0 && i != 0) //Se arrivo in fondo al "rettangolo", sposto la Y in basso
+                // If i get to the bottom of the “rectangle” i move the Y to the bottom.
+                if (i % horizontalPixels == 0 && i != 0)
                 {
                     startY += pixelSize;
                 }
-                if (pixels[i] != 0) //Se il pixel esiste...
+                
+                if (pixels[i] != 0)
                 {
-                    float x = startX + pixelSize * (i % horizontalPixels); //X del pixel corrente
-                    sprite[index] = new Pixel(new Vector2(x, startY), pixelSize, colorBorder); //Alloco il pixel e lo imposto
-                    index++; //Aumento l'indice del vettore "sprite"
+                    // Compute current X.
+                    float x = startX + pixelSize * (i % horizontalPixels);
+                    sprite[index] = new Pixel(new Vector2(x, startY), pixelSize, colorBorder);
+                    index++;
                 }
             }
         }
 
         public void Draw()
         {
-            //Gfx.DrawRect(0, 0, Gfx.Window.Width, Gfx.Window.Height, color); //Lo disegno (ultimo piano, come sfondo)
             for (int i = 0; i < sprite.Length; i++)
             {
                 sprite[i].Draw();
             }
         }
-
     }
 }

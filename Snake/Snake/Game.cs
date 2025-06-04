@@ -12,29 +12,29 @@ namespace Snake
         public static SnakeBody Snake;
         public static Field Field;
         public static Rain Rain;
-        public static float Gravity; //Gravità
+        public static float Gravity;
 
         public static void Init()
         {
-            Apple = new Apple(); //Genero la mela
+            Apple = new Apple();
             Snake = new SnakeBody();
-            Field = new Field(); //Genero il campo
+            Field = new Field();
             Rain = new Rain();
             Gravity = 5; //5px/s^2
-            Console.WriteLine("Benvenuto in Snake! Non è un gioco ufficiale, è un progetto creato unicamente a scopo didattico come applicazione dei concetti. " +
-                "Questa versione di Snake è un miscuglio di operazioni e prototipi semplici e poco ottimizzati, quindi non c'è nulla da aspettarsi. " +
-                "Le regole sono uguali alle originali: controlli un serpente, e devi fargli mangiare più frutta possibile. Più frutta mangia e più il serpente si " +
-                "allunga. L'obiettivo è mangiare più mele possibili evitando di andare a sbattere contro i muri o contro il serpente stesso." +
-                " L'unica differenza è che, non essendoci HUD per il conteggio dei punti (ma solo la console)," +
-                "ogni 10 mele mangiate riceverai un \"avviso\" particolare (nulla di che, una pioggierella di pixel). Detto ciò, buon divertimento! \n" +
-                "Ah e prima che mi scordi, salvati il tuo punteggio su un foglio di carta o Excel, poco importa, perchè questo gioco non è dotato di database :)" +
-                "\n\nComandi:\nW, A, S, D per il movimento (Su, Sinistra, Giù, Destra)");
+            Console.Write("Welcome to Snake! This is not an official game, it is a project created solely for educational purposes as an application of concepts. " +
+                "This version of Snake is a hodgepodge of simple and poorly optimized operations and prototypes, so there is nothing to expect. " +
+                "The rules are the same as the originals: you control a snake, and you have to make it eat as much fruit as possible. The more fruit it eats, the more the snake " +
+                "stretches. The goal is to eat as many apples as possible while avoiding running into walls or into the snake itself. " +
+                "The only difference is that since there is no HUD for counting points (only the console), " +
+                "for every 10 apples eaten you will receive a special \"warning\" (nothing much, a shower of pixels). That said, have fun! \n" +
+                "Oh and before i forget, save your score on a sheet of paper or Excel, it doesn't matter, because this game has no serialization system :)" +
+                "\nCommands:\nW, A, S, D for movement (Up, Left, Down, Right)");
         }
 
         public static void GameOver()
         {
-            Gfx.Window.Close(); //Si chiude la finestra, smette di ciclare il game loop e finisce il gioco
-            //mostrando il punteggio finale.
+            // This closes the window, stops the game loop, and ends the game displaying the final score.
+            Gfx.Window.Close();
         }
 
         public static void Play()
@@ -45,12 +45,17 @@ namespace Snake
                 Snake.Input();
 
                 //UPDATE
-                Timer.RunTimer(); //Starto il timer (serpente)
+                Timer.RunTimer();
                 Snake.Update();
-                Snake.CheckCollisionSnake(Apple); //Controllo le collisioni della testa del serpente con la mela
-                if (Snake.CheckSnakeBodyCollision()) GameOver(); //Se il serpente collide con se stesso, la partita finisce
+                
+                // Check the collisions of the snake's head with the apple.
+                Snake.CheckCollisionSnake(Apple);
+                // If the snake collides with itself, the game ends.
+                if (Snake.CheckSnakeBodyCollision()) GameOver();
+                
                 Timer.CheckTimer();
                 Apple.UpdateFrame();
+                
                 if (Score.ScorePT % 10 == 0 && Score.ScorePT != 0)
                 {
                     Rain.Update();
@@ -66,11 +71,11 @@ namespace Snake
                 Snake.Draw();
                 Rain.Draw();
 
-                Gfx.Window.Blit(); //Mando l'output allo schermo
+                Gfx.Window.Blit();
             }
-            Console.WriteLine($"\nHai perso!\nIl tuo PUNTEGGIO è: {Score.ScorePT}\n");
+            
+            Console.WriteLine($"\nYou lose!\nYour score: {Score.ScorePT}\n");
             Console.ReadLine();
         }
-
     }
 }

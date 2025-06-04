@@ -8,16 +8,16 @@ namespace Snake
 {
     static class Score
     {
-        public static int ScorePT; //Punteggio
+        public static int ScorePT;
 
         static Score()
         {
-            ScorePT = 0; //Inizia da zero
+            ScorePT = 0;
         }
 
         public static void AddPT()
         {
-            ScorePT++; //Aumenta ad ogni collisione con la mela
+            ScorePT++;
         }
 
     }

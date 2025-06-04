@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    static class RandomGenerator //Numero Randomico
+    static class RandomGenerator
     {
         public static Random random;
 
@@ -22,7 +22,7 @@ namespace Snake
 
         public static float GetRandomFloat()
         {
-            return (float)((random.NextDouble() + 50) * GetRandomInt()); //Numero tra 50f e 5000f
+            return (float)((random.NextDouble() + 50) * GetRandomInt()); // [50f, 5000f]
         }
     }
 }

@@ -11,12 +11,10 @@ namespace Snake
         public float x;
         public float y;
 
-        public Vector2(float x, float y) //Vettore matematico nell'origine
+        public Vector2(float x, float y)
         {
             this.x = x;
             this.y = y;
         }
-
     }
-
 }

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-
     class SnakeBody
     {
-        public SnakeRect[] Snake; //Vettore di pezzi di snake
-        public static int counterPieces; //Numero di pezzi, variabile statica
+        public SnakeRect[] Snake; // Array of snake's pieces.
+        public static int counterPieces; // Number of pieces.
 
         public SnakeBody()
         {
-            Snake = new SnakeRect[784]; //Dimensione statica di 784 rettangoli [considerando la griglia 29x29]
-            //Si, non è per niente ottimizzato ma è un progetto inter-scolastico dove utilizzo solo i concetti
-            //spiegati fino al momento di sviluppo del progetto.
+            // Static size of 784 rectangles [considering 29x29 grid].
+            // Yes, it is not at all optimized but it is an inter-school project where i use only the concepts
+            // explained up to the time of project development.
+            Snake = new SnakeRect[784]; 
             counterPieces = 0;
-            Snake[counterPieces] = new SnakeRect(); //Testa
-            Snake[counterPieces].Color = ColorsFactory.GetColor(Colors.DarkGreen); //Cambio colore testa
-            Timer.SetTimer(); //Imposto il timer
+            Snake[counterPieces] = new SnakeRect(); // Head.
+            Snake[counterPieces].Color = ColorsFactory.GetColor(Colors.DarkGreen); // Change head's color.
+            Timer.SetTimer();
         }
 
         public void Input()
@@ -41,17 +41,23 @@ namespace Snake
 
         public void CheckCollisionSnake(Apple apple)
         {
-            if (Snake[0].CheckCollision(apple)) //Se avviene la collisione con la testa...
+            // If the collision with the head occurs...
+            if (Snake[0].CheckCollision(apple))
             {
-                counterPieces++; //Aumento il numero di pezzi e alloco il nuovo pezzo di corpo
+                counterPieces++; // Add the number of pieces and allocate the new body piece.
                 Snake[counterPieces] = new SnakeRect();
-                Score.AddPT(); //Aggiorno il punteggio
+                
+                Score.AddPT(); // Update the score.
             }
-            if (counterPieces <= 0) return; //Se possiede dei pezzi, li scorro tutti e li faccio dipendere dal precedente.
-            //In questo modo verranno posizionati nel posto giusto. Tutto questo avviene tramite il collegamento dei tasti premuti.
+            
+            // If it has pieces, i scroll through them all and make them depend on the previous one.
+            // This way they will be placed in the right place. All of this is done by keypress linking.
+            if (counterPieces <= 0) return;
+            
             for (int i = 0; i < counterPieces; i++)
             {
                 Snake[i + 1].CharPressed = Snake[i].PrevCharPressed;
+                
                 switch (Snake[i + 1].CharPressed)
                 {
                     case 'W':
@@ -72,6 +78,7 @@ namespace Snake
                         break;
                 }
             }
+            
             NotIntoSnake(apple);
         }
 
@@ -88,29 +95,35 @@ namespace Snake
 
         public bool CollisionWithBody(ref int i, ref int j)
         {
-            if (i != j) //Se i pezzi non sono gli stessi, e la loro posizione coincide, ritorna true
+            // If the pieces are not the same, and their positions match, return true.
+            if (i != j) 
             {
                 if (Snake[i].X == Snake[j].X && Snake[i].Y == Snake[j].Y)
                 {
                     return true;
                 }
             }
+            
             return false;
         }
 
-        public bool CheckSnakeBodyCollision() //Controlla le collisioni con gli altri pezzi del serpente
+        // Checks collisions with other pieces of the snake.
+        public bool CheckSnakeBodyCollision()
         {
-            if (counterPieces <= 0) return false; //Se possiede solo la testa, skip
+            // If he possesses only the head, skip.
+            if (counterPieces <= 0) return false;
+            
             for (int i = 0; i <= counterPieces; i++)
             {
                 for (int j = 0; j <= counterPieces; j++)
                 {
-                    if (CollisionWithBody(ref i, ref j)) //Viene checkato ogni pezzo
+                    if (CollisionWithBody(ref i, ref j))
                     {
                         return true;
                     }
                 }
             }
+            
             return false;
         }
 
@@ -124,6 +137,5 @@ namespace Snake
                 }
             }
         }
-
     }
 }

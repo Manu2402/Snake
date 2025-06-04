@@ -8,9 +8,9 @@ namespace Snake
 {
     class Pixel
     {
-        private int size; //Dimensione del pixel
-        private Vector2 position; //Posizione del pixel
-        private Color color; //Colore del pixel
+        private int size;
+        private Vector2 position;
+        private Color color;
         public bool IsAlive;
 
         public float Y { get { return position.y; } set { position.y = value; } }
@@ -24,7 +24,7 @@ namespace Snake
             IsAlive = true;
         }
 
-        public void Translate(float x, float y) //Movimento per il disegno
+        public void Translate(float x, float y)
         {
             position.x += x;
             position.y += y;
@@ -32,15 +32,14 @@ namespace Snake
 
         public void Draw()
         {
-            //La posizione sarà l'angolo in alto a sinistra
-            Gfx.DrawRectWithoutCorners((int)position.x, (int)position.y, size, size, color); //Disegno
+            // Pivot on left-top corner.
+            Gfx.DrawRectWithoutCorners((int)position.x, (int)position.y, size, size, color);
         }
 
         public void DrawRect()
         {
-            //La posizione sarà l'angolo in alto a sinistra
-            Gfx.DrawRect((int)position.x, (int)position.y, size, size, color); //Disegno
+            // Pivot on left-top corner.
+            Gfx.DrawRect((int)position.x, (int)position.y, size, size, color); 
         }
-
     }
 }
