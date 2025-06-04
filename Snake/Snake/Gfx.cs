@@ -14,7 +14,7 @@ namespace Snake
 
         static Gfx()
         {
-            Window = new Window(855, 855, "SnakeRect", PixelFormat.RGB);
+            Window = new Window(855, 855, "Snake", PixelFormat.RGB);
             distFromBorder = 7;
         }
 
