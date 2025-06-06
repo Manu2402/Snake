@@ -4,4 +4,4 @@ The only additional functionality compared to a classic “Snake” is the prese
 
 Commands: W, A, S, D for movement (Up, Left, Down, Right).
 
-https://github.com/user-attachments/assets/716b9c8b-ef5e-409e-a729-b1ef71acd71c
+![snake](https://github.com/user-attachments/assets/52a521dd-139a-4e3b-8753-aaad70f5d4b5)
